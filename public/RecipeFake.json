@@ -1,0 +1,57 @@
+ [
+      {
+        "recipe_image": "https://media.istockphoto.com/id/1415994593/photo/chicken-curry.webp?b=1&s=170667a&w=0&k=20&c=4BYvH9FlAvQ4cBymbv2E-tdcAgDHyJ7jhwqeWFrEg0I=",
+        "recipe_id": 1,
+        "recipe_name": "Chicken Curry",
+        "short_description": "A flavorful and aromatic chicken curry with spices.",
+        "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+      },
+      {
+        "recipe_image": "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/ab01e9b1da656f35dd1a721c810162a0/Spaghetti_bolognese_4x3_V2_LOW_RES.jpg?w=768&h=512&fm=webp&fit=thumb&q=90",
+        "recipe_id": 2,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta dish with meaty tomato sauce.",
+        "ingredients": ["400 g spaghetti", "250 g ground beef", "200 g tomato sauce", "100 g onion", "50 g parmesan cheese"],
+        "preparing_time": "45 min",
+        "calories": "450 calories"
+      },
+      {
+        "recipe_image":"https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5255.jpg",
+        "recipe_id": 3,
+        "recipe_name": "Vegetable Stir Fry",
+        "short_description": "A quick and healthy stir-fry packed with colorful vegetables.",
+        "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "150 g tofu", "50 ml soy sauce", "30 ml sesame oil"],
+        "preparing_time": "20 min",
+        "calories": "200 calories"
+      },
+      {
+        "recipe_image": "https://img.freepik.com/free-photo/grilled-salmon-fillet-with-fresh-vegetable-salad-generated-by-ai_188544-21273.jpg",
+        "recipe_id": 4,
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Tender and juicy grilled salmon fillets with lemon and herbs.",
+        "ingredients": ["4 salmon fillets", "2 lemons", "30 ml olive oil", "Salt and pepper to taste"],
+        "preparing_time": "25 min",
+        "calories": "350 calories"
+      },
+      {
+        "recipe_image": "https://www.theallergenfreekitchen.com/wp-content/uploads/2022/09/easy-one-pot-vegetable-soup-square-.jpg",
+        "recipe_id": 5,
+        "recipe_name": "Vegetable Soup",
+        "short_description": "A comforting and nourishing vegetable soup perfect for cold days.",
+        "ingredients": ["500 g mixed vegetables (carrots, celery, potatoes, onions)", "1 liter vegetable broth", "2 cloves garlic", "30 ml olive oil"],
+        "preparing_time": "35 min",
+        "calories": "180 calories"
+      },
+      {
+        "recipe_image": "https://img.freepik.com/free-photo/fresh-fruit-smoothies-wooden-background_23-2148227524.jpg",
+        "recipe_id": 6,
+        "recipe_name": "Fruit Smoothie",
+        "short_description": "Refreshing and nutritious smoothie made with a variety of fresh fruits.",
+        "ingredients": ["1 banana", "100 g strawberries", "100 g blueberries", "150 ml yogurt", "Ice cubes"],
+        "preparing_time": "10 min",
+        "calories": "120 calories"
+      }
+  ]
+  
