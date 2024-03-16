@@ -24,7 +24,7 @@ const Tables = ( {cooks , handleCooking , cooking }) => {
               <table className="table">
                 {/* head */}
                 <thead>
-                  <tr className=' text-gray-400 text-[16px] font-medium'>
+                  <tr className='  text-[16px] font-medium text-black'>
                     <th></th>
                     <th>Name</th>
                     <th>Time</th>
@@ -32,7 +32,7 @@ const Tables = ( {cooks , handleCooking , cooking }) => {
                     <th></th>
                   </tr>
                 </thead>
-                <tbody className=' text-xs'>
+                <tbody className=' text-sm'>
                 
 
                   {
@@ -67,7 +67,7 @@ const Tables = ( {cooks , handleCooking , cooking }) => {
               <table className="table">
                 {/* head */}
                 <thead>
-                  <tr className=' text-gray-400 text-[16px] font-medium'>
+                  <tr className=' text-black text-[16px] font-medium'>
                     <th></th>
                     <th>Name</th>
                     <th>Time</th>
@@ -75,7 +75,7 @@ const Tables = ( {cooks , handleCooking , cooking }) => {
                     
                   </tr>
                 </thead>
-                <tbody className=' text-xs'>
+                <tbody className=' text-sm'>
                 
 
                   {
@@ -88,7 +88,7 @@ const Tables = ( {cooks , handleCooking , cooking }) => {
                   }
 
                   
-                    <tr className=' text-xs'>
+                    <tr className=' text-sm text-black'>
                     <th></th>
                     <td></td>
                     <td>Total Time = {timeAll}</td>
