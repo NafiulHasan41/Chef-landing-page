@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 
-const Card = ( {recipe}) => {
+const Card = ( {recipe , handleCooks }) => {
     
     
     const { recipe_image ,recipe_name,short_description , ingredients,preparing_time ,calories } = recipe;
 
-    console.log(typeof ingredients , ingredients);
+  
     return (
         <div className=' m-3'>
-            <div className="card w-full bg-base-100 shadow-xl h-[700px] p-2 items-center">
+            <div className="card w-full bg-base-100 shadow-xl h-[700px] p-2 items-center border border-gray-400">
                 <figure className="px-10 pt-10 rounded-xl ">
                   <img 
                     src={recipe_image}
@@ -53,6 +53,7 @@ const Card = ( {recipe}) => {
 
                   <div className="card-actions">
                   <button 
+                     onClick={ () => handleCooks(recipe)}
                      className="btn btn-primary mx-2 my-2 rounded-full bg-green-400 text-black border-none text-[18px] font-normal ">
                       Want to Cook</button>
                   </div>
@@ -63,7 +64,8 @@ const Card = ( {recipe}) => {
 };
 
 Card.propTypes = {
-    recipe : PropTypes.object
+    recipe : PropTypes.object ,
+    handleCooks: PropTypes.func
 }
 
 export default Card;

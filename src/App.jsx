@@ -1,19 +1,42 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Cards from "./Components/Cards/Cards";
 import Header from "./Components/Header/Header";
-
-
+import Tables from "./Components/Tables/Tables";
 
 function App() {
+  const [cooks, setCooks] = useState([]);
+
+  const [cooking , setCooking] = useState([]);
+
+  const handleCooks = (item) => {
+    const temp = cooks.find((t) => t.recipe_id === item.recipe_id);
+    if (!temp) {
+      setCooks([...cooks, item]);
+    } else {
+      alert("something");
+    }
+  };
+  const handleCooking = (item) => {
+      const temp = cooks.filter( it => it.recipe_id !== item.recipe_id)
+
+      setCooks(temp);
+
+      setCooking([...cooking, item]);
+     
+  };
+
   return (
     <>
       <section className="header">
         <Header></Header>
       </section>
+
       <section className="banner  w-[95%] md:w-[82.5%] max-w-[1320px] mx-auto mt-7  md:mt-12">
         <Banner></Banner>
       </section>
+
       <section className="showing w-[95%] md:w-[82.5%] max-w-[1320px] mx-auto mt-7  md:mt-24">
         <div className="title-section text-center">
           <h1 className="text-black text-3xl md:text-5xl font-semibold">
@@ -31,55 +54,16 @@ function App() {
         {/* this the section for two parts api and table */}
 
         <div className=" grid grid-cols-1 lg:grid-cols-5 gap-5">
+          {/* this the api calla section */}
 
-
-        {/* this the api calla section */}
-        
           <div className=" col-span-3">
-             <Cards></Cards>
+            <Cards handleCooks={handleCooks}></Cards>
           </div>
-
 
           {/* This for table section */}
 
-
-          <div className=" col-span-2 border-gray-500 p-1 rounded-xl shadow-xl border">
-            <div className="overflow-x-auto">
-              <table className="table">
-                {/* head */}
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Job</th>
-                    <th>Favorite Color</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {/* row 1 */}
-                  <tr>
-                    <th>1</th>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
-                  </tr>
-                  {/* row 2 */}
-                  <tr>
-                    <th>2</th>
-                    <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                    <td>Purple</td>
-                  </tr>
-                  {/* row 3 */}
-                  <tr>
-                    <th>3</th>
-                    <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div className=" md:col-span-2  w-full">
+            <Tables cooks={cooks} handleCooking={handleCooking}  cooking={cooking} ></Tables>
           </div>
         </div>
       </section>

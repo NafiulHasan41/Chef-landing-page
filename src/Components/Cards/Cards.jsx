@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import PropTypes from 'prop-types';
 
 
-const Cards = () => {
+const Cards = ( {handleCooks}) => {
 
     const [recipes, setRecipes] = useState([]);
 
@@ -19,12 +20,17 @@ const Cards = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
             
             {
-                 recipes.map( recipe  => <Card key={recipe.id} recipe={recipe} ></Card> )
+                 recipes.map( recipe  => <Card key={recipe.recipe_id} recipe={recipe} handleCooks={handleCooks} ></Card> )
             }
             
            
         </div>
     );
 };
+
+Cards.propTypes = {
+    
+    handleCooks: PropTypes.func
+}
 
 export default Cards;
